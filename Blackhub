@@ -37,8 +37,8 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("Universal", nil) -- Title, Image
-local Section = MainTab:CreateSection("Cheaty dla arabów")
+local MainTab = Window:CreateTab("CounterBlox", nil) -- Title, Image
+local Section = MainTab:CreateSection("keyless")
 
 Rayfield:Notify({
    Title = "Script executed",
@@ -48,27 +48,7 @@ Rayfield:Notify({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Fly",
+   Name = "StratW",
    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Stratxgy/Untitled-Project/refs/heads/main/Untitled%20Project.lua"))()
    end,
-})
-
-local Slider = MainTab:CreateSlider({
-   Name = "speed",
-   Range = {16, 100},
-   Increment = 1,
-   Suffix = "Speed",
-   CurrentValue = 16,
-   Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-   end,
-})
-
-local Button = MainTab:CreateButton({
-   Name = "Infinite yield",
-   Callback = function()
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Infinite-Yield-31802"))()
-   end,
-})
