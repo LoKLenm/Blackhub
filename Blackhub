@@ -67,7 +67,7 @@ local Slider = MainTab:CreateSlider({
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Noclip",
+   Name = "Infinite yield",
    Callback = function()
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Infinite-Yield-31802"))()
    end,
