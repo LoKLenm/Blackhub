@@ -37,8 +37,9 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local MainTab = Window:CreateTab("Universal", nil) -- Title, Image
-local Section = MainTab:CreateSection("Cheaty dla arabów")
+local MainTab = Window:CreateTab("Brookhaven", nil) -- Title, Image
+local MainTab = Window:CreateTab("CounterBlox", nil) -- Title, Image
+
 
 Rayfield:Notify({
    Title = "Script executed",
